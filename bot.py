@@ -6,7 +6,7 @@ from flask import Flask, request
 app = Flask(__name__)
 
 global bot
-bot = telegram.Bot(token='TOKEN')
+bot = telegram.Bot(token='236649244:AAEhWLRS1dSQQLnk2im6Q9v-dkvxhGD0FN4')
 
 
 @app.route('/HOOK', methods=['POST'])
@@ -28,7 +28,7 @@ def webhook_handler():
 
 @app.route('/set_webhook', methods=['GET', 'POST'])
 def set_webhook():
-    s = bot.setWebhook('https://URL/HOOK')
+    s = bot.setWebhook('https://key-cistern-143210.appspot.com/HOOK')
     if s:
         return "webhook setup ok"
     else:
